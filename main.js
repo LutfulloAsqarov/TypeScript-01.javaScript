@@ -46,18 +46,12 @@ const dublicate = (num) => {
 
 const deleteQuestion = (str) => {
     if (!str.endsWith("?")) return str;
-
     let newStr = str.split("");
-    // return newStr;
-
     while (newStr[newStr.length - 1] === "?") {
         newStr.pop();
     }
-    // console.log(newStr[i]);
-
     return newStr.join("");
 };
-
 // console.log(deleteQuestion("sa?lom??"));
 // console.log(deleteQuestion("sa?lom"));
 // console.log(deleteQuestion("sa?lom?????"));
