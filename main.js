@@ -60,4 +60,4 @@ const deleteQuestion = (str) => {
 
 // console.log(deleteQuestion("sa?lom??"));
 // console.log(deleteQuestion("sa?lom"));
-console.log(deleteQuestion("salom?????????????"));
+// console.log(deleteQuestion("sa?lom?????"));
