@@ -48,14 +48,16 @@ const deleteQuestion = (str) => {
     if (!str.endsWith("?")) return str;
 
     let newStr = str.split("");
-    for (let i = 0; i < newStr.length; i++) {
-        if (newStr[newStr.length - 1] === "?") {
-            newStr.pop();
-        }
+    // return newStr;
+
+    while (newStr[newStr.length - 1] === "?") {
+        newStr.pop();
     }
+    // console.log(newStr[i]);
+
     return newStr.join("");
 };
 
 // console.log(deleteQuestion("sa?lom??"));
 // console.log(deleteQuestion("sa?lom"));
-// console.log(deleteQuestion("salom?"));
+console.log(deleteQuestion("salom?????????????"));
